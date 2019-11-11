@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="back">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Img/favicon-16x16.png"
+    />
+    <script type="text/javascript" src="Jarvis.js"></script>
+    <div class="header">
+      <img
+        src="http://www.susf.com.au/auto/theme/sydneyunisport/assets/logo_susf.png"
+        alt="logo"
+      />
+    </div>
+  </head>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a
+          href="https://www.susf.com.au/shop/category/gym-programs#"
+          target="_blank"
+          >PROGRAMS</a
+        >
+      </li>
+      <li>
+        <a href="https://www.susf.com.au/contacts.html" target="_blank"
+          >MEDIA</a
+        >
+      </li>
+      <li><a href="LogIn2.html">LOGIN</a></li>
+      <li><a href="Personal3.html">SIGN UP</a></li>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+      <form action="ContDets4.html">
+        <h2 style="text-align: center;">Personal Details</h2>
+        <div class="dotcontainer">
+          <span
+            class="dot1"
+            onclick="window.location.href='Personal3.html'"
+          ></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="column">
+            <label for="firstname"> <b>First Name</b></label>
+            <input
+              type="text"
+              placeholder="John"
+              name="firstname"
+              id="firstname"
+              required
+            />
+          </div>
+
+          <div style="padding: 0 0 0 0;" class="column">
+            <label for="Lname"><b>Last Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Last Name"
+              name="Lname"
+              id="Lname"
+              required
+            />
+          </div>
+        </div>
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+
+        <label for="phn"><b>Phone Number</b></label>
+        <input
+          type="text"
+          placeholder="Enter Number"
+          name="phn"
+          id="Pnumber"
+          required
+        />
+
+        <label for="slect"><b>Please Select</b></label>
+
+        <br />
+
+        <label class="checkcontainer"
+          >One
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+          <div class="centered">GOLD</div>
+        </label>
+
+        <label class="checkcontainer"
+          >TWO
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+          <div class="centered">SILVER</div>
+        </label>
+
+        <label class="checkcontainer"
+          >Three
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+          <div class="centered">BRONZE</div>
+        </label>
+        <br />
+        <a
+          href="https://www.susf.com.au/files/16472_sydnunsp_price_cards_2019_final.pdf"
+          target="_blank"
+          style="text-decoration:none; color: rgb(250, 193, 39)"
+        >
+          <h5>+ More Information</h5>
+        </a>
+
+        <h3>
+          <button type="submit" class="btn" onclick="save()">
+            Next
+          </button>
+        </h3>
+      </form>
+    </div>
+  </body>
+  <footer class="Lfooter">
+    <div class="footcontainer">
+      <div class="footrow">
+        <div class="column">
+          <img src="Img/logo_susf.png" alt="logo" />
+        </div>
+        <div class="column2">
+          <h6 class="white-text">SUSF</h6>
+          <ul class="footul" style="padding: 0px 0px 30px;">
+            <li>
+              <a style="padding: 0%; font-size: 0.7em" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/shop/category/gym-programs#"
+                target="_blank"
+                >PROGRAMS</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/contacts.html"
+                target="_blank"
+                >MEDIA</a
+              >
+            </li>
+
+            <li>
+              <a style="padding: 0%; font-size: 0.7em" href="Personal3.html"
+                >SIGN UP</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column2">
+          <h6 class="white-text">Our Facilities</h6>
+          <ul class="footul" style="padding: 0px 0px 30px;">
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/the-arena.html"
+                >The Arena</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/squash-and-tennis-courts.html"
+                >Squash & Tennis Courts</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/boatshed.html"
+                >Thyne Reid Boatshed</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/bruce-pryor-hockey-field.html"
+                >Bruce Pyror Hockey Field</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright" style="font-size: 0.7em">
+      <div class="footcontainer">
+        © 2019 OLIM3983
+        <a class="right white-text" style="text-decoration: none; " href="#!"
+          >SUSF</a
+        >
+      </div>
+    </div>
+  </footer>
+</html>

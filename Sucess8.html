@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="back">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Img/favicon-16x16.png"
+    />
+
+    <div class="header">
+      <img
+        src="http://www.susf.com.au/auto/theme/sydneyunisport/assets/logo_susf.png"
+        alt="logo"
+      />
+    </div>
+  </head>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a
+          href="https://www.susf.com.au/shop/category/gym-programs#"
+          target="_blank"
+          >PROGRAMS</a
+        >
+      </li>
+      <li>
+        <a href="https://www.susf.com.au/contacts.html" target="_blank"
+          >MEDIA</a
+        >
+      </li>
+      <li><a href="LogIn2.html">LOGIN</a></li>
+      <li><a href="Personal3.html">SIGN UP</a></li>
+    </ul>
+  </nav>
+  <body>
+    <div class="container" style="text-align: center">
+      <form
+        action="https://www.susf.com.au/shop/item/group-fitness"
+        target="_blank"
+      >
+        <br />
+        <h2>Congratulations</h2>
+
+        <br />
+
+        <p id="welcomeMessage"></p>
+
+        <p>
+          Welcome to SUSF, you are now a member of the most successful sporting
+          club in the Southern Hemisphere.
+        </p>
+
+        <p>
+          SUSF Group Fitness and HIIT classes offer a supportive, motivating and
+          challenging training environment for people of all ages and fitness
+          levels.
+        </p>
+
+        <p>
+          Take a look at one of our 65+ group classes now!
+        </p>
+
+        <h3>
+          <button type="submit" class="btn" onclick="save()">
+            More Information
+          </button>
+        </h3>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      var firstname = localStorage.getItem("firstname");
+      var lastname = localStorage.getItem("Lname");
+
+      document.getElementById("welcomeMessage").innerHTML =
+        firstname + " " + lastname;
+    </script>
+  </body>
+  <footer class="Lfooter">
+    <div class="footcontainer">
+      <div class="footrow">
+        <div class="column">
+          <img src="Img/logo_susf.png" alt="logo" />
+        </div>
+        <div class="column2">
+          <h6 class="white-text">SUSF</h6>
+          <ul class="footul" style="padding: 0px 0px 30px;">
+            <li>
+              <a style="padding: 0%; font-size: 0.7em" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/shop/category/gym-programs#"
+                target="_blank"
+                >PROGRAMS</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/contacts.html"
+                target="_blank"
+                >MEDIA</a
+              >
+            </li>
+
+            <li>
+              <a style="padding: 0%; font-size: 0.7em" href="Personal3.html"
+                >SIGN UP</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column2">
+          <h6 class="white-text">Our Facilities</h6>
+          <ul class="footul" style="padding: 0px 0px 30px;">
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/the-arena.html"
+                >The Arena</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/squash-and-tennis-courts.html"
+                >Squash & Tennis Courts</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/boatshed.html"
+                >Thyne Reid Boatshed</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/bruce-pryor-hockey-field.html"
+                >Bruce Pyror Hockey Field</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright" style="font-size: 0.7em">
+      <div class="footcontainer">
+        © 2019 OLIM3983
+        <a class="right white-text" style="text-decoration: none; " href="#!"
+          >SUSF</a
+        >
+      </div>
+    </div>
+  </footer>
+</html>

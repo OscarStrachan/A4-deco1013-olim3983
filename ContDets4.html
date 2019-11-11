@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="back">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Img/favicon-16x16.png"
+    />
+    <script type="text/javascript" src="Jarvis.js"></script>
+    <div class="header">
+      <img
+        src="http://www.susf.com.au/auto/theme/sydneyunisport/assets/logo_susf.png"
+        alt="logo"
+      />
+    </div>
+  </head>
+  <nav>
+    <ul>
+      <li><a href="landing.html">HOME</a></li>
+      <li>
+        <a
+          href="https://www.susf.com.au/shop/category/gym-programs#"
+          target="_blank"
+          >PROGRAMS</a
+        >
+      </li>
+      <li>
+        <a href="https://www.susf.com.au/contacts.html" target="_blank"
+          >MEDIA</a
+        >
+      </li>
+      <li><a href="LogIn2.html">LOGIN</a></li>
+      <li><a href="Personal3.html">SIGN UP</a></li>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+      <form action="SecDetails5.html">
+        <h2 style="text-align: center;"><b>Contact Details</b></h2>
+
+        <span
+          class="dot1"
+          onclick="window.location.href='Personal3.html'"
+        ></span>
+        <span
+          class="dot1"
+          onclick="window.location.href='ContDets4.html'"
+        ></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+        <br />
+
+        <label for="address"><b>Address</b></label>
+        <input
+          type="text"
+          placeholder="Enter Address"
+          name="address"
+          id="address"
+          required
+        />
+
+        <div class="row">
+          <div class="column">
+            <label for="sub"><b>Suburb/City</b></label>
+            <input
+              type="text"
+              placeholder="Suburb/City"
+              name="sub"
+              id="sub"
+              required
+            />
+          </div>
+
+          <div style="padding: 0 0 0 0;" class="column">
+            <label for="pCode"><b>Post Code</b></label>
+            <input
+              type="text"
+              placeholder="#0000"
+              name="pCode"
+              id="pCode"
+              required
+            />
+          </div>
+        </div>
+
+        <label for="emg"><b>Emergency Contact Name</b></label>
+        <input type="text" placeholder="John Citizen" name="emg" required />
+
+        <label for="emgN"><b>Emergency Contact Number</b></label>
+        <input type="text" placeholder="+61 " name="emgN" required />
+
+        <br />
+
+        <div class="row">
+          <div class="column">
+            <h3>
+              <button
+                type="next"
+                class="btn"
+                style="background-color: rgb(128, 128, 128) "
+                onclick="window.location.href='Personal3.html'"
+              >
+                Previous
+              </button>
+            </h3>
+          </div>
+
+          <div style="padding: 0 0 0 0;" class="column">
+            <h3>
+              <button type="submit" class="btn" onclick="save()">Next</button>
+            </h3>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <footer class="Lfooter">
+    <div class="footcontainer">
+      <div class="footrow">
+        <div class="column">
+          <img src="Img/logo_susf.png" alt="logo" />
+        </div>
+        <div class="column2">
+          <h6 class="white-text">SUSF</h6>
+          <ul class="footul" style="padding: 0px 0px 30px;">
+            <li>
+              <a style="padding: 0%; font-size: 0.7em" href="landing.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/shop/category/gym-programs#"
+                target="_blank"
+                >PROGRAMS</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/contacts.html"
+                target="_blank"
+                >MEDIA</a
+              >
+            </li>
+
+            <li>
+              <a style="padding: 0%; font-size: 0.7em" href="Personal3.html"
+                >SIGN UP</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column2">
+          <h6 class="white-text">Our Facilities</h6>
+          <ul class="footul" style="padding: 0px 0px 30px;">
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/the-arena.html"
+                >The Arena</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/squash-and-tennis-courts.html"
+                >Squash & Tennis Courts</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/boatshed.html"
+                >Thyne Reid Boatshed</a
+              >
+            </li>
+            <li>
+              <a
+                style="padding: 0%; font-size: 0.7em"
+                href="https://www.susf.com.au/bruce-pryor-hockey-field.html"
+                >Bruce Pyror Hockey Field</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright" style="font-size: 0.7em">
+      <div class="footcontainer">
+        © 2019 OLIM3983
+        <a class="right white-text" style="text-decoration: none; " href="#!"
+          >SUSF</a
+        >
+      </div>
+    </div>
+  </footer>
+</html>

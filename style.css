@@ -1,0 +1,773 @@
+/* font sizing */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Griffy:400");
+
+html {
+  font-size: 25px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+  color: rgb(250, 193, 39);
+}
+
+h2 {
+  font-size: 2.157em;
+  margin: 1rem 0rem 1rem;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 5px 0px 5px;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1rem 0rem 1rem;
+}
+
+h5 {
+  font-size: 0.8em;
+  margin: 0.5rem 0.5rem 0.1rem;
+}
+
+small,
+.text_small {
+  font-size: 0.75em;
+}
+
+.textcontainer {
+  position: relative;
+  margin: auto;
+  padding: 50px 200px;
+  text-align: center;
+}
+
+/* Header styled with grey background and some padding */
+.header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0px 20px 0px;
+}
+
+.header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+/* Menue Bar */
+.stick {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 15px 0px;
+  margin: 0 0 0 0;
+  margin-block-end: 0em;
+  background-color: rgb(250, 193, 39);
+}
+
+li {
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(141, 109, 22);
+}
+
+/* sliders */
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 0px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* second landing image */
+.container2 {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.landcontainer {
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+
+  position: relative;
+  padding: 60px 0px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* 3 column */
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 30px 30px 0 30px;
+  text-align: center;
+}
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.itext {
+  font-size: 0.65em;
+}
+
+/* gold,S,B */
+.columnimgG {
+  float: left;
+  width: 33.33%;
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+  background: url(Img/gold.jpg);
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.columnimgS {
+  float: left;
+  width: 33.33%;
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+  background: url(Img/silver.jpg);
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.columnimgB {
+  float: left;
+  width: 33.33%;
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+  background: url(Img/bronze.jpg);
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.GSB {
+  font-size: 0.65em;
+  margin: 2em;
+}
+
+/* onboarding background */
+.back {
+  background: url(Img/img:bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* on boarding styles */
+body,
+html * {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 16px;
+  opacity: 0.95;
+}
+
+.container form {
+  max-width: 840px;
+  padding: 1% 40px;
+  background-color: white;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 25px;
+  margin: 5px 0px 10px 0px;
+  font-size: 0.5em;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* button styles */
+.btnL {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-color: rgb(250, 193, 39);
+  border-width: 3px;
+  color: rgb(250, 193, 39);
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 0.7em;
+
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+  transition: color 0.15s linear, background-color 0.15s linear,
+    border 0.15s linear, opacity 0.15s linear;
+}
+.btng {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  color: white;
+  padding: 15px 20px;
+  margin: 0 0 20px 0;
+  border-radius: 50px;
+  font-size: 0.7em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  right: 25%;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  transition: color 0.15s linear, background-color 0.15s linear,
+    border 0.15s linear, opacity 0.15s linear;
+}
+
+.btn {
+  background-color: #1a5be6;
+  color: white;
+  padding: 15px 20px;
+
+  border-radius: 10px;
+  font-size: 0.4em;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btnL:hover {
+  opacity: 1;
+  color: white;
+  background-color: rgb(250, 193, 39);
+}
+
+.btng:hover {
+  color: rgb(250, 193, 39);
+  background-color: white;
+  border-color: white;
+  opacity: 1;
+}
+/* text columns */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 5px 0 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Customize the label (the container) */
+.checkcontainer {
+  display: inline-block;
+  position: relative;
+  padding-left: 125px;
+  padding-bottom: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 10px;
+  height: 65px;
+  width: 100%;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkcontainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkcontainer input:checked ~ .checkmark {
+  background-color: rgb(250, 193, 39);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkcontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkcontainer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.centered {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* progress */
+
+.dotcontainer {
+  width: 100%;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  margin: 25px 7.9% 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot1 {
+  height: 25px;
+  width: 25px;
+  margin: 25px 7.9% 25px;
+  background-color: rgb(250, 193, 39);
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot:hover {
+  background-color: #717171;
+}
+.dot1:hover {
+  background-color: rgb(161, 126, 29);
+}
+
+/* footer styling */
+
+.Lfooter {
+  padding-top: 20px;
+  color: #fff;
+  background-color: rgb(39, 40, 44);
+}
+
+.footcontainer {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.footrow {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.footrow .column {
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  width: 33%;
+  min-height: 1px;
+}
+.footrow .column2 {
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  width: 33%;
+  min-height: 1px;
+}
+
+.white-text {
+  color: #fff !important;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 110%;
+  margin: 1rem 0 0.656rem 0;
+}
+
+.footul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  background: 0%;
+}
+
+.page-footer .footer-copyright {
+  overflow: hidden;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 0px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(51, 51, 51, 0.08);
+}
+.right {
+  float: right !important;
+}
+
+/* Media query for mobile */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  /* menue */
+  .header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px 0px 0px;
+  }
+  .header img {
+    display: block;
+    margin-right: auto;
+    margin-left: 0px;
+    width: 45%;
+  }
+
+  ul {
+    font-size: 0.8em;
+  }
+
+  .container {
+    position: relative;
+    margin: auto;
+    padding: 50px;
+  }
+
+  li a {
+    padding: 30px 10px;
+  }
+
+  .container form {
+    padding: 1% 40px;
+    margin: 1% auto auto auto;
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 0.6em;
+    padding: 6%;
+    margin: 10px 0px 25px;
+  }
+
+  .btn {
+    background-color: #1a56d6;
+    color: white;
+    padding: 15px 20px;
+    font-size: 0.4em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  html {
+    font-size: 55px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.9em;
+    margin: 0.2rem 0rem 0.2rem;
+  }
+  h2.l {
+    font-size: 1em;
+  }
+  h3 {
+    margin: 0 0rem;
+  }
+  h4 {
+    font-size: 0.4em;
+    margin: 0.3rem 0rem 0.3rem;
+  }
+
+  h4.lf {
+    font-size: 0.8em;
+    margin: 0.3rem 0rem 0.3rem;
+  }
+
+  .textcontainer {
+    padding: 50px 100px;
+  }
+
+  .btnL {
+    width: 40%;
+  }
+
+  .container2 {
+    height: 480px;
+  }
+
+  .centered {
+    top: 50%;
+    width: 80%;
+  }
+  .column3 {
+    float: left;
+    width: 100%;
+    padding: 30px 30px 0 30px;
+    text-align: center;
+  }
+
+  .landcontainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .itext {
+    font-size: 37px;
+  }
+  /* gold,silver,bronze */
+
+  .columnimgG {
+    float: left;
+    width: 100%;
+    height: 100%;
+  }
+
+  .columnimgS {
+    float: left;
+    width: 100%;
+    height: 100%;
+  }
+
+  .columnimgB {
+    float: left;
+    width: 100%;
+    height: 100%;
+  }
+
+  .GSB {
+    font-size: 1em;
+    margin: 1em;
+    padding: 0 0 80px 0;
+  }
+  /* check boxs */
+  .checkmark {
+    height: 105px;
+  }
+  .checkcontainer {
+    font-size: 40px;
+  }
+
+  .dot {
+    height: 35px;
+    width: 35px;
+    margin: 25px 6.8% 25px;
+  }
+  .dot1 {
+    height: 35px;
+    width: 35px;
+    margin: 25px 6.8% 25px;
+  }
+
+  /* footer */
+  .footrow .column {
+    float: none;
+    text-align: center;
+    padding: 1rem 0 0;
+    width: 100%;
+    min-height: 1px;
+  }
+  .footrow .column2 {
+    float: left;
+    text-align: left;
+    padding: 1rem 0 0;
+    width: 50%;
+    min-height: 1px;
+  }
+}
